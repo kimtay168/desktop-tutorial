@@ -949,3 +949,47 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+
+  .crate-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    padding: 1.5em;
+  }
+
+  .crate-timer {
+    justify-content: center;
+  }
+
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1.5em 0;
+  }
+
+  .box.ranks,
+  .box.crates,
+  .box.gems {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .players-info, .discord-info {
+    text-align: center;
+  }
+
+  .discord-link {
+    margin-right: 0;
+  }
+}

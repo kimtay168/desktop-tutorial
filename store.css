@@ -374,3 +374,49 @@
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
+@media (max-width: 768px) {
+  .rank-header-bar {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .rank-title.rank-right {
+    margin-left: 0;
+  }
+
+  .home-button.blockhero-style {
+    margin-left: 0;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .rank-card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .rank-container {
+    gap: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .footer-left p {
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
