@@ -420,3 +420,37 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 600px) {
+  .rank-header-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-left: 0;
+  }
+
+  .home-button.blockhero-style {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .rank-title.rank-right {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .rank-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rank-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .rank-modal .modal-content {
+    margin: 10% auto;
+    width: 95%;
+  }
+}
+
