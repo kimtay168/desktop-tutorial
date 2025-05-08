@@ -453,4 +453,59 @@
     width: 95%;
   }
 }
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .rank-header-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .home-button.blockhero-style {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .rank-title.rank-right {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-left: 0;
+  }
+
+  .rank-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .rank-card {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .footer-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}
 
