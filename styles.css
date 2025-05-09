@@ -67,10 +67,15 @@ body {
 }
 
 .logo-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -60px; /* pull it up */
   max-width: 240px;
   height: auto;
   animation: pulseLogo 2s ease-in-out infinite alternate;
 }
+
+
 
 .logo {
   font-size: 2.5em;
@@ -992,4 +997,110 @@ body {
   .discord-link {
     margin-right: 0;
   }
+}
+/* Navbar Hamburger Styles */
+/* Navbar Hamburger Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1em;
+  position: absolute;
+}
+
+.nav-logo {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 1em;
+    background-color: #B20030;
+    border-radius: 12px;
+    padding: 1em;
+    width: 160px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .nav-links li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  background: transparent;
+  z-index: 1000;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  background: #B20030;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 80px; /* offset for fixed navbar */
 }

@@ -19,15 +19,20 @@
     <link rel="icon" href="image/favicon.png" type="image/x-icon" />
   </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <a class="nav-item" href="index.html">STORE</a>
-      <a class="nav-item" href="#">VOTE</a>
-      <a class="nav-item active" href="store.html">RANKS</a>
-      <a class="nav-item" href="#">MAPS</a>
-      <a class="nav-item" href="#">SUPPORT</a>
-    </nav>
 
+  <header class="hero">
+<nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a class="nav-item" href="index.html">STORE</a></li>
+    <li><a class="nav-item" href="#">VOTE</a></li>
+    <li><a class="nav-item active" href="store.html">RANKS</a></li>
+    <li><a class="nav-item" href="#">MAPS</a></li>
+    <li><a class="nav-item" href="#">SUPPORT</a></li>
+  </ul>
+</nav>
     <div class="hero-stats">
       <div class="players-box" onclick="copyIP()">
         <div class="players-info">
@@ -68,10 +73,12 @@
           <div id="days" class="timer-digit">07</div>
           <small>DAYS</small>
         </div>
+        <div class="timer-separator">:</div>
         <div class="timer-box">
           <div id="hours" class="timer-digit">00</div>
           <small>HOURS</small>
         </div>
+        <div class="timer-separator">:</div>
         <div class="timer-box">
           <div id="minutes" class="timer-digit">00</div>
           <small>MINUTES</small>
