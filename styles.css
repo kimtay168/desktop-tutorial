@@ -961,15 +961,28 @@ body {
     padding: 1.5em 0;
   }
 
+
   .crate-banner {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 1em;
     padding: 1.5em;
   }
 
   .crate-timer {
+    flex-direction: row;
     justify-content: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .timer-box {
+    min-width: 60px;
+  }
+
+  .claim-button {
+    margin: 0.5em auto 0;
   }
 
   .grid-layout {
@@ -993,7 +1006,24 @@ body {
   .players-info, .discord-info {
     text-align: center;
   }
+  
 
+  .players-box,
+  .discord-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .players-info,
+  .discord-info {
+    text-align: center;
+  }
+
+  .discord-link {
+    margin-right: 0;
+  }
   .discord-link {
     margin-right: 0;
   }
