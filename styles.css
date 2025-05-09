@@ -956,37 +956,20 @@ body {
 }
 @media (max-width: 768px) {
   .hero-stats {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     gap: 1.5em;
-    margin-top: 100px;
-    padding: 0 1em; /* Add padding to prevent overflow */
+    padding: 1.5em 0;
   }
-
 
   .crate-banner {
     flex-direction: column;
-    align-items: center;
     text-align: center;
     gap: 1em;
     padding: 1.5em;
   }
 
   .crate-timer {
-    flex-direction: row;
     justify-content: center;
-    gap: 0.5em;
-    flex-wrap: wrap;
-  }
-
-  .timer-box {
-    min-width: 60px;
-  }
-
-  .claim-button {
-    margin: 0.5em auto 0;
   }
 
   .grid-layout {
@@ -1009,31 +992,12 @@ body {
 
   .players-info, .discord-info {
     text-align: center;
+    display: none;
   }
   
 
-  .players-box,
-  .discord-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    word-wrap: break-word;
-  }
-
-  .players-info,
-  .discord-info {
-    text-align: center;
-  }
-
   .discord-link {
-    margin: 0;
-    word-break: break-word;
-    font-size: 0.6em;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    white-space: normal;
+    margin-right: 0;
   }
 }
 /* Navbar Hamburger Styles */
