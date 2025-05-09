@@ -389,7 +389,6 @@
 
   .home-button.blockhero-style {
     margin-left: 0;
-    width: 90%;
     justify-content: center;
   }
 
@@ -429,7 +428,7 @@
   }
 
   .home-button.blockhero-style {
-    width: 100%;
+    width: 40%;
     justify-content: center;
   }
 
@@ -472,11 +471,6 @@
     text-align: center;
     padding: 10px;
     gap: 12px;
-  }
-
-  .home-button.blockhero-style {
-    width: 90%;
-    justify-content: center;
   }
 
   .rank-title.rank-right {
