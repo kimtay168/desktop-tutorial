@@ -956,9 +956,13 @@ body {
 }
 @media (max-width: 768px) {
   .hero-stats {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 1.5em;
-    padding: 1.5em 0;
+    margin-top: 100px;
+    padding: 0 1em; /* Add padding to prevent overflow */
   }
 
 
@@ -1013,7 +1017,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5em;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
   }
 
   .players-info,
@@ -1022,10 +1028,12 @@ body {
   }
 
   .discord-link {
-    margin-right: 0;
-  }
-  .discord-link {
-    margin-right: 0;
+    margin: 0;
+    word-break: break-word;
+    font-size: 0.6em;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 }
 /* Navbar Hamburger Styles */
