@@ -938,6 +938,11 @@ body {
   
 
 }
+.box.gems img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .box.gems img.full-box-image {
   width: 100%;
   height: auto;
@@ -980,15 +985,23 @@ body {
     padding: 1.5em 0;
   }
 
-  .box.ranks,
-  .box.crates,
-  .box.gems {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-    padding: 1em;
-  }
+.box.ranks,
+.box.crates,
+.box.gems {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5em;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
   .players-info, .discord-info {
     text-align: center;
