@@ -69,7 +69,6 @@ body {
 .logo-img {
   display: block;
   margin: 0 auto;
-  margin-top: -60px; /* pull it up */
   max-width: 240px;
   height: auto;
   animation: pulseLogo 2s ease-in-out infinite alternate;
@@ -142,7 +141,12 @@ body {
   padding: 40px 60px;
   box-sizing: border-box;
 }
-
+@media (max-width: 768px) {
+  .logo-img {
+    margin-top: 20px; /* space under fixed navbar */
+    max-width: 180px;
+  }
+}
 
 .footer {
   width: 100%;
@@ -1118,4 +1122,39 @@ body {
 
 body {
   padding-top: 80px; /* offset for fixed navbar */
+}
+@media (max-width: 768px) {
+  .crate-timer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+  }
+
+  .crate-timer .timer-box,
+  .crate-timer .timer-separator {
+    margin: 0;
+  }
+
+  .crate-timer .timer-separator {
+    display: none;
+  }
+
+  .claim-button {
+    margin: 1em auto 0 auto;
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+
+  .footer-right {
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
 }
