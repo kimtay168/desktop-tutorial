@@ -1005,7 +1005,7 @@ a.social-icon {
 .box.crates,
 .box.gems {
   width: 100%;
-  max-width: 330px;
+  max-width: 350px;
   height: 200px;
   display: flex;
   flex-direction: column;
