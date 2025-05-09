@@ -6,26 +6,42 @@
   <title>MAZER-CLUB</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="store.css" />
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
   <link rel="icon" href="image/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
+  </script>
 
 </head>
 <body>
   <header class="hero">
-    <nav class="navbar">
-      <a class="nav-item" href="index.html">STORE</a>
-      <a class="nav-item" href="#">VOTE</a>
-      <a class="nav-item active" href="store.html">RANKS</a>
-      <a class="nav-item" href="#">MAPS</a>
-      <a class="nav-item" href="#">SUPPORT</a>
-    </nav>
-
+<div class="nav-wrapper"><nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a class="nav-item" href="index.html">STORE</a></li>
+    <li><a class="nav-item" href="#">VOTE</a></li>
+    <li><a class="nav-item active" href="store.html">RANKS</a></li>
+    <li><a class="nav-item" href="#">MAPS</a></li>
+    <li><a class="nav-item" href="#">SUPPORT</a></li>
+  </ul>
+</nav></div>
     <div class="hero-stats">
       <div class="players-box" onclick="copyIP()">
         <div class="players-info">
@@ -136,7 +152,7 @@
       <a href="https://www.youtube.com/@mazerclub168" class="social-icon"><i class="fa-brands fa-youtube" target="_blank"></i></a>
       <a href="https://www.facebook.com/mazerclub" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
       <a href="https://www.tiktok.com/@mazerclub2" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://t.me/mazerclub_network" class="social-icon"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://t.me/mazerclub_network" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
     </div>
   </footer>
 
