@@ -6,7 +6,7 @@
   <title>MAZER-CLUB</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="store.css" />
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <link rel="icon" href="image/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -99,21 +99,21 @@
             <img src="image/VIP.png" alt="VIP Rank" />
             <h1>VIP</h1>
             <p><span class="price pricevip">$5</span></p>
-            <button class="buy-button" onclick="openModal('vipModal')">BUY NOW</button>
+<a href="javascript:void(0)" class="buy-button" onclick="openModal('rankModal')">BUY NOW</a>
           </div>
         
           <div class="rank-card mvp">
             <img src="image/MVP.png" alt="MVP Rank" />
             <h1>MVP</h1>
             <p><span class="price mvp">$10</span></p>
-            <button class="buy-button" onclick="openModal('mvpModal')">BUY NOW</button>
+<a href="javascript:void(0)" class="buy-button" onclick="openModal('rankModal')">BUY NOW</a>
           </div>
         
           <div class="rank-card mvp-plus">
             <img src="image/MVPPLUS.png" alt="MVP+ Rank" />
             <h1>MVP+</h1>
             <p><span class="price mvpp">$15</span></p>
-            <button class="buy-button" onclick="openModal('mvppModal')">BUY NOW</button>
+<a href="javascript:void(0)" class="buy-button" onclick="openModal('rankModal')">BUY NOW</a>
           </div>
         </div>
         
@@ -156,5 +156,25 @@
     </div>
   </footer>
 
+<div id="rankModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title">MVP+ RANK</h2>
+    <img id="modal-image" src="image/MVPPLUS.png" alt="Hero Rank" class="modal-rank-image">
+    <p class="modal-warning">This is a 30day subscription ranks</p>
+    <p><strong>When buying a rank, you will only receive it on the server you select.</strong></p>
+    <h3>Commands:</h3>
+    <ul class="modal-list">
+      <li>/claim (x9)</li>
+      <li>/set home (x15)</li>
+      <li>/workbench</li>
+      <li>/ec</li>
+      <li>/craft</li>
+      <li>/anvil</li>
+      <li>/kit mvp+ (in 12hours)</li>
+    </ul>
+    <button class="claim-button" onclick="closeModal()">Add to Cart</button>
+  </div>
+</div>
 </body>
 </html>

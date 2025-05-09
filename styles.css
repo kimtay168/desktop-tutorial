@@ -1000,6 +1000,11 @@ a.social-icon {
     gap: 2em;
     padding: 1.5em 0;
   }
+.box.ranks{
+    box-shadow: 0 8px 0 #02789c;
+}
+
+
 
 .box.ranks,
 .box.crates,
@@ -1015,7 +1020,6 @@ a.social-icon {
   padding: 1.5em;
   box-sizing: border-box;
   border-radius: 20px;
-  box-shadow: 0 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 

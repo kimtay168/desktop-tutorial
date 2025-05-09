@@ -94,6 +94,7 @@
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    text-decoration: none;
   }
   
   .buy-button:hover {
@@ -296,16 +297,6 @@
       opacity: 1;
     }
   }
-.mvp{
-  color: rgb(0, 191, 255);
-} 
-
-.vip{
-  color: yellow;
-}
-.mvp-plus{
-  color: red;
-}
 @media (max-width: 480px) {
   .home-button.blockhero-style {
     flex-direction: column;
@@ -501,5 +492,89 @@
     gap: 10px;
     margin-top: 15px;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 2em;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-content img {
+  display: block;
+  margin: 0 auto 1em auto;
+  width: 80px;
+}
+
+.modal-warning {
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.modal-content p,
+.modal-content ul {
+  font-size: 0.85em;
+  text-align: left;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.modal-content code {
+  background: #eee;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.modal-content h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.modal-list {
+  padding-left: 1.5em;
+}
+
+.modal-list li {
+  margin-bottom: 0.5em;
+  list-style-type: disc;
+}
+
+
+.close {
+  position: absolute;
+  top: 1em;
+  right: 1.2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
 }
 

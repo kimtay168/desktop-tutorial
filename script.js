@@ -82,3 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('active');
   });
 });
+
+function openModal() {
+  document.getElementById("rankModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("rankModal").style.display = "none";
+}
