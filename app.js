@@ -42,6 +42,12 @@ function matchQuestion(input, lang) {
 }
 
 // Handle chat
+// ✅ Add this GET route just to check if backend is up
+app.get("/", (req, res) => {
+  res.send("MAZ-BRAIN backend is running ✅");
+});
+
+// ✅ Keep this POST route for actual chat messages
 app.post("/chat", async (req, res) => {
   const userMessage = req.body.message;
   const lang = req.body.lang || "kh";
@@ -51,7 +57,7 @@ app.post("/chat", async (req, res) => {
 
   setTimeout(() => {
     res.json({ reply });
-  }, Math.floor(Math.random() * 1000) + 1000);
+  }, Math.floor(Math.random() * 1000) + 1000); // 1–2s delay
 });
 
 const PORT = process.env.PORT || 3000;
