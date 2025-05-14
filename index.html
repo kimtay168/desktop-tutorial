@@ -588,13 +588,15 @@
         `;
         chatLog.scrollTop = chatLog.scrollHeight;
       } catch {
-        chatLog.innerHTML += `
-          <div class="chat-msg bot">
-            <img class="chat-avatar" src="bot.png" alt="Bot" />
-            <div class="chat-bubble">⚠️ MAZ-BRAIN is offline or an error occurred.</div>
-          </div>
-        `;
-        chatLog.scrollTop = chatLog.scrollHeight;
+    const loadingMsg = document.createElement("div");
+    loadingMsg.className = "chat-msg bot typing";
+    loadingMsg.innerHTML = `
+      <img class="chat-avatar" src="bot.png" alt="Bot" />
+      <div class="chat-bubble">Typing<span class="dots">...</span></div>
+    `;
+    saveChatHistory();
+    chatLog.appendChild(loadingMsg);
+    chatLog.scrollTop = chatLog.scrollHeight;
       }
     }
   });
