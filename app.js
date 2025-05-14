@@ -54,7 +54,7 @@ app.post("/chat", async (req, res) => {
   }, Math.floor(Math.random() * 1000) + 1000);
 });
 
-const PORT = process.env.PORT || 25578;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`MAZ-BRAIN running on port ${PORT}`);
 });
