@@ -478,6 +478,7 @@
   const chatInput = document.getElementById("chat-input");
   const chatLog = document.getElementById("chat-log");
 
+  const selectedLang = localStorage.getItem("lang") || "kh";
   // Load chat history from localStorage
   window.addEventListener("load", () => {
     const savedLang = localStorage.getItem("lang") || "kh";
