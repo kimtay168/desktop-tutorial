@@ -1,0 +1,1267 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #dff6ff;
+  color: #111;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #B20030, #f14c78);
+  padding-top: 6em;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* height of the zigzag */
+  background-image: linear-gradient(to right, #e8fdff 50%, transparent 50%);
+  background-size: 100px 100%; /* width of each zigzag "tooth" */
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+
+
+.navbar {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 0.6em 1.2em;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.nav-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item.active {
+  background: yellow;
+  color: #a3002c;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.hero-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 3em 0 4em;
+  flex-wrap: wrap;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 240px;
+  height: auto;
+  animation: pulseLogo 2s ease-in-out infinite alternate;
+}
+
+
+
+.logo {
+  font-size: 2.5em;
+  color: yellow;
+}
+
+.highlight {
+  color: red;
+}
+
+.promo {
+  background: #e6f9ff;
+  padding: 1.5em;
+}
+
+.crate-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #cce5f6;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.store-grid {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 2em;
+}
+
+.store-item {
+  padding: 2em 1em;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: white;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.store-item:hover {
+  transform: scale(1.05);
+  background: #222 !important;
+}
+
+/* .ranks { background: #00aaff; } */
+/* .crates { background: #ff7f0e;} */
+.gems { background: #8dc63f; }
+.giftcards { background: #222; }
+
+.footer {
+  width: 100%;
+  background-color: #0d1b1e;
+  color: #cbd5e1;
+  font-family: 'Minecrafter', sans-serif;
+  margin-top: 40px;
+}
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .logo-img {
+    margin-top: 20px; /* space under fixed navbar */
+    max-width: 180px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #0d1b1e;
+  color: #cbd5e1;
+  font-family: 'Minecrafter', sans-serif;
+  padding: 40px 60px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 600px; /* ⬅️ This creates nice space between left & right */
+}
+
+
+.footer-left p {
+  margin: 4px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  background: #1a2b30;
+  color: #b9d8e4;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.social-icon:hover {
+  background: #2d3f44;
+  color: white;
+}
+
+.footer-left p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  background: #1a2b30;
+  color: #b9d8e4;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.social-icon:hover {
+  background: #2d3f44;
+  color: white;
+}
+
+@media (max-width: 1008px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.social-icon:hover {
+  background: #2d3f44;
+  color: white;
+}
+
+.social-icon img {
+  width: 32px;
+  height: 32px;
+  background-color: #1a2b30;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.social-icon img:hover {
+  background-color: #2d3f44;
+  filter: brightness(1.2);
+}
+.social-icon i {
+  text-decoration: none;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon {
+  text-decoration: none;
+}
+a.social-icon {
+  text-decoration: none;
+}
+.hero-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This aligns everything vertically */
+  gap: 1.5em;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 auto;
+}
+@keyframes pulseLogo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+.hero-stats {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  gap: 3em;
+  padding: 2em 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+.stat-title,
+.stat-sub {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.85em;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+
+.stat-title.red {
+  color: #f14c4c;
+}
+
+.icon-circle {
+  background-color: #f14c4c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+}
+.players-box {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  cursor: pointer;
+}
+
+.players-info {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+  text-align: right;
+  
+}
+
+.players-online {
+  color: whitesmoke;
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+.players-ip {
+  position: relative;
+  height: 1em;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+.default-text,
+.hover-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.3s ease;
+}
+
+.default-text {
+  opacity: 1;
+}
+
+.hover-text {
+  opacity: 0;
+}
+
+.players-box:hover .default-text {
+  opacity: 0;
+}
+
+.players-box:hover .hover-text {
+  opacity: 1;
+}
+
+.players-icon img {
+  width: 48px;
+  height: 48px;
+}
+.play-button-img {
+  width: 50px;
+  height: auto;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
+
+.circle-button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  flex-shrink: 0;
+}
+
+.stat-content {
+  text-align: left;
+}
+
+.play-title {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.play-now-text {
+  font-size: 0.75em;
+  line-height: 1;
+}
+.player-count {
+  background-color: #ffe400;
+  color: #a3002c;
+  padding: 0.25em 0.6em;
+  border-radius: 6px;
+  font-size: 0.75em;
+}
+.copy-ip {
+  font-size: 0.7em;
+  line-height: 1;
+  margin-left: 0.4em;
+}
+/* .players-online,
+.discord-online,
+.players-ip span,
+.discord-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Make it normal, not bold */
+  /* color: white;
+} */ */
+.stair-border {
+  background: repeating-linear-gradient(
+    to right,
+    #e6fbff 0px,
+    #e6fbff 40px,
+    transparent 40px,
+    transparent 60px
+  );
+  height: 20px;
+  width: 100%;
+}
+.discord-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.discord-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.discord-users {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.discord-link {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.75em;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  margin-right: 130px;
+}
+.crate-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d4ecf5;
+  border-radius: 20px;
+  padding: 2em 3em;
+  max-width: 1200px;
+  margin: 2em auto;
+  box-shadow: 0 8px 0 #c1dbe6;
+  gap: 2em;
+}
+.crate-banner img {
+  width: 80px;
+  height: auto;
+}
+.crate-icon {
+  width: 200px;
+  height: auto;
+  margin-right: 1em;
+}
+.image-wrapper {
+  background-color: #95a9ad94; /* Match your site's color */
+  border-radius: 16px;
+  padding: 1em;
+  display: inline-block;
+}
+
+.crate-text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.crate-text h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+.crate-text p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.75em;
+}
+.crate-timer {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  justify-content: flex-end;
+  font-family: 'Press Start 2P', cursive;
+}
+.timer-box {
+  text-align: center;
+}
+.timer-digit {
+  background: transparent;
+  font-weight: bold;
+  color: black;
+  font-size: 1.4em;
+  text-shadow: 1px 1px #000;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  display: inline-block;
+  min-width: 2.5em;
+}
+
+.crate-timer small {
+  display: block;
+  font-size: 0.6em;
+  margin-top: 0.3em;
+  color: #555;
+  font-family: 'Press Start 2P', cursive;
+}
+.crate-timer span {
+  display: inline-block;
+  margin: 0 0.3em;
+}
+.crate-title {
+  font-family: 'MinecraftCreeper', sans-serif;
+  font-size: 1.8em;
+  color: black;
+  text-align: center;
+  line-height: 1.4;
+}
+.crate-subtitle {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7em;
+  color: #5d707a;
+  text-align: center;
+}
+
+.claim-now {
+  background-color: #ff4c4c;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6em;
+  padding: 0.5em 0.8em;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  display: inline-block;
+}
+.claim-button.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.claim-button {
+  display: inline-block;
+  margin-left: 1em;
+  margin-top: 1em;
+  padding: 0.6em 1.4em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.65em;
+  background-color: #ff4c4c;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.claim-button:hover {
+  background-color: #e03b3b;
+  transform: scale(1.05);
+}
+
+.store-item {
+  padding: 2em 1em;
+  border-radius: 20px;
+  font-size: 1.2em;
+  color: white;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.store-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ centers the boxes */
+  gap: 2em;
+  padding: 2em;
+  max-width: 1200px;       /* ✅ set a max width for layout control */
+  margin: 0 auto;          /* ✅ centers the whole grid container */
+}
+.store-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.store-item:hover {
+  transform: scale(1.05);
+  background: #222 !important;
+}
+.store-grid-custom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "banner  banner"
+    "ranks   crates"
+    ".       gems"
+    "giftcards giftcards";
+  gap: 1em;
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: span 2;
+  gap: 1em;
+  max-width: 1200px;
+  background: color white;
+  margin: 0 auto;
+  align-items: stretch;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: 0 6px #ccc;
+}
+.content-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .box.ranks {
+  position: relative;
+  width: 500px; 
+  height: 300px; 
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #03a9f4;
+  box-shadow: 0 8px #027fb9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+} */
+.content-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.content-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* aligns both items to the bottom */
+}
+
+
+.content-side .text {
+  text-align: left;
+}
+/* .rank-image {
+  height: 250px;
+  margin-right: 60px;
+  align-self: flex-end; /* moves image to bottom */
+/* }
+.ranks .text {
+  text-align: left;
+} */ 
+/* .box.ranks .content-wrapper {
+  transform: scale(0.8);
+  transform-origin: left center;
+} */
+
+/* @media (max-width: 768px) {
+  .box.ranks .content-wrapper {
+    transform: scale(0.65);
+    transform-origin: center;
+  }
+} */
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding-left: 20px;
+  text-align: left;
+}
+.box .text {
+  color: white;
+  font-family: 'Minecraftia', sans-serif;
+}
+
+.box .text h3 {
+  font-size: 36px;
+  margin: 0;
+}
+.box .text p {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+.ranks {
+  background: #00BDF6;
+  grid-row: span 2;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/* .box.ranks {
+  position: relative;
+  
+}
+.box.ranks .text.bottom-left {
+  bottom: 30px;
+  left: 20px;
+}
+.box.ranks img.rank-image {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+} */
+
+  /* .ranks img {
+    width: 200px;
+    height: auto;
+  } */
+
+.crates {
+  background: #ff8604;
+}
+.gems {
+  background: #90c43d;
+  justify-content: space-between;
+}
+
+/* .crates img,
+.gems img {
+  width: 100px;
+  height: auto;
+} */
+
+.text h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.text p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* .discord-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+} */
+@font-face {
+  font-family: 'MinecraftCreeper';
+  src: url('fonts/minecraft-creeper.ttf') format('truetype');
+}
+.timer-separator {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.
+}
+.section-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-family: 'Minecraft', sans-serif;
+  font-size: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px #ccc;
+  transition: transform 0.2s ease;
+}
+
+/* .section-box:hover {
+  transform: scale(1.02);
+} */
+
+/* .section-box.ranks {
+  background-color: #03a9f4;
+  grid-row: span 2;
+} */
+/* 
+.section-box.crates {
+  background-color: #ff8604;
+} */
+
+.section-box.gems {
+  background-color: #90c43d;
+}
+/* .footer {
+  position: relative;
+  margin-top: 40px;
+} */
+@font-face {
+  font-family: 'Minecrafter';
+  src: url('Minecrafter-MAAD3w.ttf') format('truetype');
+}
+
+/* .ranks .text.bottom-left h3,
+.ranks .text.bottom-left p {
+  font-family: 'Minecrafter', sans-serif;
+  font-size: 20px; /* Adjust size as needed */
+  /* margin: 0;
+  line-height: 1.2;
+}  */
+/* For all boxes */
+.box {
+  transition: transform 0.3s ease;
+}
+.box.crates{
+  box-shadow: 0 8px 0#a35604;
+}
+.box.gems{
+  box-shadow: 0 8px 0#496620;
+}
+/* Hover zoom effect */
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Ranks box */
+/* .box.ranks {
+  box-shadow: 0 8px 0 #057cb3; /* transparent shadow */
+/*} 
+
+/* Crates box */
+.box.ranks {
+  box-shadow: 0 8px 0 #02789c; /* orange shadow */
+}
+.full-box-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Fills box, may crop a bit */
+  object-position: center; /* Keeps it centered */
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  z-index: 0;
+  box-shadow: #02789c;
+}
+
+.box.ranks {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: #02789c;
+}
+.box.ranks .text {
+  position: relative;
+  z-index: 1;
+}
+
+.box.ranks:hover .full-box-image {
+  transform: scale(1.05);
+}
+.crates-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Or contain, depending on your design */
+  display: block;
+}
+.box.crates {
+  width: 93%;
+  height: 50%;
+  position: relative;
+}
+.box.crates img.full-box-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.gems-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Or contain, depending on your design */
+  display: block;
+}
+.box.gems {
+  width: 93%;
+  height: 50%;
+  position: relative;
+  
+
+}
+.box.gems img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.box.gems img.full-box-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.box.crates,
+.box.gems {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+
+  .crate-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    padding: 1.5em;
+  }
+
+  .crate-timer {
+    justify-content: center;
+  }
+
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1.5em 0;
+  }
+.box.ranks{
+    box-shadow: 0 8px 0 #02789c;
+}
+
+
+
+.box.ranks,
+.box.crates,
+.box.gems
+ {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5em;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+  .players-info, .discord-info {
+    text-align: center;
+    display: none;
+  }
+  
+
+  .discord-link {
+    margin-right: 0;
+  }
+}
+/* Navbar Hamburger Styles */
+/* Navbar Hamburger Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1em;
+  position: absolute;
+}
+
+.nav-logo {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 1em;
+    background-color: #B20030;
+    border-radius: 12px;
+    padding: 1em;
+    width: 160px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .nav-links li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  background: transparent;
+  z-index: 1000;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  background: #B20030;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 80px; /* offset for fixed navbar */
+}
+@media (max-width: 768px) {
+  .crate-timer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+  }
+
+  .crate-timer .timer-box,
+  .crate-timer .timer-separator {
+    margin: 0;
+  }
+
+  .crate-timer .timer-separator {
+    display: none;
+  }
+
+  .claim-button {
+    margin: 1em auto 0 auto;
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+
+  .footer-right {
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+}
+.text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.4em 1em;
+  border-radius: 10px;
+}
+.box.viewranks {
+  background: #ff2f68;
+  box-shadow: 0 8px 0 #c72852;
+  width: 100%;
+  max-width: 1160px;
+  height: auto;
+  min-height: 10px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    flex: 0 0 100%; /* Don't shrink, take full width */
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+
+.viewranks-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.viewranks-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  color: white;
+}
+.box.viewranks:hover {
+  transform: scale(1.05);
+}
+.box.viewranks img.full-box-image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.box.viewranks {
+  grid-column: span 2;
+} 
+.viewranks-container {
+  display: flex;
+  justify-content: flex-end; /* Moves it to the right */
+  margin-top: 2em;
+}
+@media (max-width: 768px) {
+.box.viewranks
+ {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5em;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+    min-height: 200px;
+}
+@media (max-width: 768px) {
+  .box.viewranks {
+    max-width: 350px;
+    height: auto;
+    padding: 1.5em;
+  }
+
+  .box.viewranks img.full-box-image {
+    width: 100%;
+    max-width: 15000px;
+  }
+}
+}

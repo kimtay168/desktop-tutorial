@@ -1,0 +1,148 @@
+.mazerrank-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mazerrank-card {
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.mazerank-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+.mazerrank-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;   
+}
+.viewrank-banner {
+  width: 10%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .viewrank-card {
+    width: 140px;
+    padding: 16px;
+      margin: 16px auto 16px 8px;
+        margin-right: 8px; /* adjust as needed */
+  }
+
+  .viewrank-card img {
+    width: 60px; /* smaller on mobile */
+  }
+
+  .viewrank-card h3 {
+    font-size: 0.65em;
+  }
+
+  .viewrank-button {
+    font-size: 0.6em;
+    padding: 6px 12px;
+  }
+}
+.rank-tier-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  max-width: 1300px;
+}
+
+.rank-tier-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: black;
+  box-shadow: 0 0 15px rgba(255, 0, 76, 0.2);
+  max-width: 300px;
+}
+
+.rank-icon {
+  width: 120px;
+  margin-bottom: 15px;
+}
+.rank-tier-card h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.rank-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.rank-features {
+  text-align: left;
+  margin: 15px 0;
+  padding-left: 0;
+  list-style: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.rank-features .highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 11px;
+  color: yellow;
+}
+
+.kit-img {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.kit-label {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.buy-button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-family: 'Press Start 2P', cursive;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buy-button:hover {
+  background: #ccc;
+}
+
+.vip-title {
+  color: yellow;
+}
+
+.mvp-title {
+  color: #00ffff;
+}
+
+.mvpplus-title {
+  color: #ff3366;
+}

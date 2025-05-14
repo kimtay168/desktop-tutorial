@@ -1,0 +1,87 @@
+.viewrank-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.viewrank-card {
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.viewrank-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+.viewrank-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;   
+}
+.viewrank-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff3d5a;
+  border-radius: 6px;
+  box-shadow: 0 3px #c72852;
+  transition: transform 0.2s;
+}
+
+.viewrank-card h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7em;
+  color: #222;
+  margin-bottom: 1em;
+}
+
+.viewrank-button {
+  font-family: 'Press Start 2P', cursive;
+  padding: 6px 16px;
+  font-size: 0.6em;
+  border-radius: 8px;
+}
+
+.viewrank-button:hover {
+    background-color: #e32f4a;
+  transform: scale(1.05);
+}
+.viewrank-banner {
+  width: 10%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .viewrank-card {
+    width: 140px;
+    padding: 16px;
+      margin: 16px auto 16px 8px;
+        margin-right: 8px; /* adjust as needed */
+  }
+
+  .viewrank-card img {
+    width: 60px; /* smaller on mobile */
+  }
+
+  .viewrank-card h3 {
+    font-size: 0.65em;
+  }
+
+  .viewrank-button {
+    font-size: 0.6em;
+    padding: 6px 12px;
+  }
+}

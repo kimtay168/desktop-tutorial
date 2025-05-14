@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAZERSMP RANKS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="store.css">
+  <link rel="stylesheet" href="mazersmprank.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="hero">
+<div class="nav-wrapper"><nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a class="nav-item" href="index.html">STORE</a></li>
+    <li><a class="nav-item" href="#">VOTE</a></li>
+    <li><a class="nav-item active" href="store.html">RANKS</a></li>
+    <li><a class="nav-item" href="#">MAPS</a></li>
+    <li><a class="nav-item" href="#">SUPPORT</a></li>
+  </ul>
+</nav></div>
+    <div class="hero-stats">
+      <div class="players-box" onclick="copyIP()">
+        <div class="players-info">
+          <div class="players-online"><span id="player-count">...</span> PLAYERS ONLINE</div>
+          <div class="players-ip">
+            <span class="default-text">MAZERCLUB.COM</span>
+            <span class="hover-text">CLICK TO COPY IP</span>
+          </div>
+        </div>
+      </div>
+
+      <img src="image/mazer_club_logo.png" alt="Mazer Club Logo" class="logo-img" />
+
+      <div class="discord-box">
+        <div class="discord-info">
+          <div class="discord-users" id="discord-count">749 USERS ONLINE</div>
+          <a href="https://discord.gg/Rpfecpuuzf" target="_blank" class="discord-link">
+            <span class="default-text">DISCORD.GG/MAZERCLUB</span>
+            <span class="hover-text">CLICK TO JOIN</span>
+          </a>
+        </div>
+      </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="rank-container-outer">
+    <div class="rank-container-inner">
+      <section class="rank-section">
+        
+        <!-- Home Button and Title -->
+        <div class="rank-header-bar">
+          <a href="index.html" class="home-button blockhero-style">
+            <div class="home-icon-wrapper">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="home-text">
+              <span class="label">RETURN TO BROWSE</span>
+              <span class="main">HOME</span>
+            </div>
+          </a>
+        
+          <h2 class="rank-title rank-right">VIEW MAZERSMP</h2>
+        </div>
+        
+        <!-- Rank Cards Row -->
+<!-- <div class="viewrank-grid">
+  <div class="viewrank-card">
+<img src="image/mazersmp.png" alt="MAZERSMP" style="width: 30%; max-width: 500px; display: block; margin: 0 auto;" />
+    <h3>MAZER-SMP</h3>
+    <a href="#" class="viewrank-button">VIEW</a>
+  </div>
+  <div class="viewrank-card">
+<img src="image/mazereco.png" alt="MAZERECO" style="width: 30%; max-width: 500px; display: block; margin: 0 auto;" />
+    <h3>MAZER-ECO</h3>
+    <a href="#" class="viewrank-button">VIEW</a>
+</div> -->
+<div class="rank-tier-container">
+  <div class="rank-tier-card">
+    <img src="image/vip.png" alt="RANK VIP" class="rank-icon" />
+    <h3 class="vip-title">RANK VIP</h3>
+    <p class="rank-price">5.00$</p>
+    <ul class="rank-features">
+      <li>➤ /claim <span class="highlight">(x4)</span></li>
+      <li>➤ /set home <span class="highlight">(x5)</span></li>
+      <li>➤ /ec</li>
+      <li>➤ /anvil , /craft</li>
+      <li>➤ /kit vip <span class="small-text">(in 12hours)</span></li>
+    </ul>
+    <img src="image/kit_vip.png" alt="VIP Kit" class="kit-img" />
+    <p class="kit-label vip-title">VIP Kit</p>
+    <button class="buy-button">BUY NOW</button>
+  </div>
+
+  <div class="rank-tier-card">
+    <img src="image/mvp.png" alt="RANK MVP" class="rank-icon" />
+    <h3 class="mvp-title">RANK MVP</h3>
+    <p class="rank-price">10.00$</p>
+    <ul class="rank-features">
+      <li>➤ /claim <span class="highlight">(x6)</span></li>
+      <li>➤ /set home <span class="highlight">(x10)</span></li>
+      <li>➤ /ec</li>
+      <li>➤ /anvil , /craft</li>
+      <li>➤ /kit mvp <span class="small-text">(in 12hours)</span></li>
+    </ul>
+    <img src="image/kit_vip.png" alt="MVP Kit" class="kit-img" />
+    <p class="kit-label mvp-title">MVP Kit</p>
+    <button class="buy-button">BUY NOW</button>
+  </div>
+
+  <div class="rank-tier-card">
+    <img src="image/mvpplus.png" alt="RANK MVP+" class="rank-icon" />
+    <h3 class="mvpplus-title">RANK MVP+</h3>
+    <p class="rank-price">15.00$</p>
+    <ul class="rank-features">
+      <li>➤ /claim <span class="highlight">(x9)</span></li>
+      <li>➤ /set home <span class="highlight">(x15)</span></li>
+      <li>➤ /ec</li>
+      <li>➤ /anvil , /craft</li>
+      <li>➤ /kit mvp+ <span class="small-text">(in 12hours)</span></li>
+    </ul>
+    <img src="image/kit_vip.png" alt="MVP+ Kit" class="kit-img" />
+    <p class="kit-label mvpplus-title">MVP+ Kit</p>
+    <button class="buy-button">BUY NOW</button>
+  </div>
+</div>
+        
+        
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <p>COPYRIGHT 2025 MAZER-CLUB</p>
+      <p>We are not affiliated with or endorsed by Mojang, AB.</p>
+      <p>Support email: mazerclub@gmail.com</p>
+      <p>Theme created by <strong>MAZER-INDUSTRY</strong></p>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.youtube.com/@mazerclub168" class="social-icon"><i class="fa-brands fa-youtube" target="_blank"></i></a>
+      <a href="https://www.facebook.com/mazerclub" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.tiktok.com/@mazerclub2" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://t.me/mazerclub_network" class="social-icon"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+  </footer>
+  <script>
+  window.chatbaseConfig = {
+    chatbotId: "7ldGgBSHHkoj_WD6gWuAn",
+    welcomeMessage: "សួស្តី! ខ្ញុំគឺ MAZ-BRAIN។ តើអ្នកចង់ដឹងអំពី MazerClub?",
+    placeholderText: "សួរអ្វីមួយ...",
+    chatbubble: true
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" defer></script>
+</body>
+</html>
