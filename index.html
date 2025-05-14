@@ -522,32 +522,34 @@
       chatInput.value = "";
       chatLog.scrollTop = chatLog.scrollHeight;
 
-try {
-  const res = await fetch("https://desktop-tutorial-1-gfnz.onrender.com/chat", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: msg, lang: selectedLang })
+      try {
+        const res = await fetch("https://desktop-tutorial-1-gfnz.onrender.com/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: msg, lang: selectedLang })
+        });
+
+        const data = await res.json();
+
+        // Add bot message (left)
+        chatLog.innerHTML += `
+          <div class="chat-msg bot">
+            <img class="chat-avatar" src="bot.png" alt="Bot" />
+            <div class="chat-bubble">${formatMessage(data.reply)}</div>
+          </div>
+        `;
+        chatLog.scrollTop = chatLog.scrollHeight;
+      } catch {
+        chatLog.innerHTML += `
+          <div class="chat-msg bot">
+            <img class="chat-avatar" src="bot.png" alt="Bot" />
+            <div class="chat-bubble">⚠️ MAZ-BRAIN is offline or an error occurred.</div>
+          </div>
+        `;
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+    }
   });
-
-  const data = await res.json();
-  chatLog.innerHTML += `
-    <div class="chat-msg bot">
-      <img class="chat-avatar" src="bot.png" alt="Bot" />
-      <div class="chat-bubble">${formatMessage(data.reply)}</div>
-    </div>
-  `;
-  chatLog.scrollTop = chatLog.scrollHeight;
-
-} catch (err) {
-  console.error("Fetch failed:", err);
-  chatLog.innerHTML += `
-    <div class="chat-msg bot">
-      <img class="chat-avatar" src="bot.png" alt="Bot" />
-      <div class="chat-bubble">⚠️ MAZ-BRAIN is offline or error occurred.</div>
-    </div>
-  `;
-}
-
 
   // Send message on button click
   document.getElementById("chat-send").addEventListener("click", function () {
