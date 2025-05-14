@@ -522,13 +522,10 @@
       chatLog.scrollTop = chatLog.scrollHeight;
 
       try {
-        fetch("https://desktop-tutorial-iczk.onrender.com/chat", {
+        const res = await fetch("https://desktop-tutorial-1-gfnz.onrender.com/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            message: msg,
-            lang: localStorage.getItem("lang") || "kh"
-          })
+          body: JSON.stringify({ message: msg, lang: selectedLang })
         });
 
         const data = await res.json();
