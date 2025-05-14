@@ -1,0 +1,208 @@
+
+[5/14/2025, 3:54:28 AM]
+User: hello
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 3:54:50 AM]
+User: what is server rank
+MAZ-BRAIN: ពួកយើងមាន Rank 3:
+
+ - VIP (5$)
+- MVP (10$)
+- MVP+ (15$)
+
+[5/14/2025, 3:55:28 AM]
+User: name ey ke
+MAZ-BRAIN: សុំអភ័យទោស! ខ្ញុំមិនយល់សំណួរនេះទេ។ សូមសួរឡើងវិញឬប្តូរប្រយោគ។
+
+[5/14/2025, 4:01:02 AM]
+User: ip
+MAZ-BRAIN: Mazerclub ip is:
+
+Bedrock: bedrock.mazerclub.net
+Port: 25619
+
+Java: Mazerclub.net
+
+[5/14/2025, 3:46:49 PM]
+User: hello
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 4:42:37 PM]
+User: hello
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 5:04:21 PM]
+User: hello
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 5:09:05 PM]
+User: hello
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 5:15:19 PM]
+User: hello
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 5:15:23 PM]
+User: ip
+MAZ-BRAIN: Mazerclub ip is:
+
+Bedrock: bedrock.mazerclub.net
+Port: 25619
+
+Java: Mazerclub.net
+
+[5/14/2025, 5:15:39 PM]
+User: owner
+MAZ-BRAIN: ម្ចាស់សាវាឈ្មោះ:
+
+XingMazer
+KingTayy
+
+[5/14/2025, 5:20:55 PM]
+User: ip
+MAZ-BRAIN: Mazerclub ip is:
+
+Bedrock: bedrock.mazerclub.net
+Port: 25619
+
+Java: Mazerclub.net
+
+[5/14/2025, 5:22:06 PM]
+User: ip
+MAZ-BRAIN: Mazerclub ip is:
+
+Bedrock: bedrock.mazerclub.net
+Port: 25619
+
+Java: Mazerclub.net
+
+[5/14/2025, 5:22:26 PM]
+User: jo server
+MAZ-BRAIN:  Bedrock: ប្រើ Bedrock.mazerclub.net និង port 25619
+
+[5/14/2025, 5:22:31 PM]
+User: rbeab jo server
+MAZ-BRAIN:  Bedrock: ប្រើ Bedrock.mazerclub.net និង port 25619
+
+[5/14/2025, 5:22:45 PM]
+User: mean rank ey ke klas
+MAZ-BRAIN: ពួកយើងមាន Rank 3:
+
+ - VIP (5$)
+- MVP (10$)
+- MVP+ (15$)
+
+[5/14/2025, 5:23:02 PM]
+User: ចុះឈ្ម
+MAZ-BRAIN: សុំអភ័យទោស! ខ្ញុំមិនយល់សំណួរនេះទេ។ សូមសួរឡើងវិញឬប្តូរប្រយោគ។
+
+[5/14/2025, 5:23:11 PM]
+User: register
+MAZ-BRAIN: សុំវាយពាក្យ: /register <ពាក្យសម្ងាត់> <ពាក្យសម្ងាត់> ដើម្បីបង្កើត account ចូលលេង Server.
+
+[5/14/2025, 5:23:36 PM]
+User: owner server na ke
+MAZ-BRAIN: ម្ចាស់សាវាឈ្មោះ:
+
+XingMazer
+KingTayy
+
+[5/14/2025, 5:24:19 PM]
+User: tele
+MAZ-BRAIN: TELEGRAM MAZERCLUB: https://t.me/mazerclub_network
+
+[5/14/2025, 5:24:27 PM]
+User: តេលេ
+MAZ-BRAIN: TELEGRAM MAZERCLUB: https://t.me/mazerclub_network
+
+[5/14/2025, 5:24:31 PM]
+User: តេឡេ
+MAZ-BRAIN: TELEGRAM MAZERCLUB: https://t.me/mazerclub_network
+
+[5/14/2025, 5:25:56 PM]
+User: builder
+MAZ-BRAIN: MAZERCLUB BUILDER NAME: CUBEKHMER Pousaisi IBest908
+
+[5/14/2025, 5:32:10 PM]
+User: builder
+MAZ-BRAIN: MAZERCLUB BUILDERS: CUBEKHMER Pousaisi IBest908
+
+[5/14/2025, 5:32:22 PM]
+User: builder
+MAZ-BRAIN: អ្នកសាងសង់ឲ្យ MazerClub: CUBEKHMER Pousaisi IBest908
+
+[5/14/2025, 5:32:50 PM]
+User: na ke builder
+MAZ-BRAIN: អ្នកសាងសង់ឲ្យ MazerClub: CUBEKHMER Pousaisi IBest908
+
+[5/14/2025, 5:42:26 PM]
+User: born
+MAZ-BRAIN: សុំអភ័យទោស! ខ្ញុំមិនយល់សំណួរនេះទេ។ សូមសួរឡើងវិញឬប្តូរប្រយោគ។
+
+[5/14/2025, 5:42:47 PM]
+User: born
+MAZ-BRAIN: សុំអភ័យទោស! ខ្ញុំមិនយល់សំណួរនេះទេ។ សូមសួរឡើងវិញឬប្តូរប្រយោគ។
+
+[5/14/2025, 5:44:19 PM]
+User: born
+MAZ-BRAIN: សុំអភ័យទោស! ខ្ញុំមិនយល់សំណួរនេះទេ។ សូមសួរឡើងវិញឬប្តូរប្រយោគ។
+
+[5/14/2025, 5:44:26 PM]
+User: born
+MAZ-BRAIN: Mazerclub Created on  19 april 2022
+
+[5/14/2025, 5:45:13 PM]
+User: register
+MAZ-BRAIN: សុំវាយពាក្យ: /register <ពាក្យសម្ងាត់> <ពាក្យសម្ងាត់> ដើម្បីបង្កើត account ចូលលេង Server.
+
+[5/14/2025, 5:52:40 PM]
+User: owner
+MAZ-BRAIN: ម្ចាស់សាវាឈ្មោះ:
+
+XingMazer
+KingTayy
+
+[5/14/2025, 5:52:46 PM]
+User: born
+MAZ-BRAIN: សុំអភ័យទោស! ខ្ញុំមិនយល់សំណួរនេះទេ។ សូមសួរឡើងវិញឬប្តូរប្រយោគ។
+
+[5/14/2025, 5:55:53 PM]
+User: born
+MAZ-BRAIN: Mazerclub បានបង្កើតឡើងនៅ ថ្ងៃទី 19 ខែមេសា 2022
+
+[5/14/2025, 6:00:10 PM]
+User: builder
+MAZ-BRAIN: អ្នកសាងសង់ឲ្យ MazerClub: CUBEKHMER Pousaisi IBest908
+
+[5/14/2025, 6:13:42 PM]
+User: owner
+MAZ-BRAIN: Mazerclub Owners:
+
+XingMazer
+KingTayy
+
+[5/14/2025, 6:15:49 PM]
+User: hi
+MAZ-BRAIN: Hello, How can i help you today?
+
+[5/14/2025, 6:15:53 PM]
+User: hi
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 7:05:56 PM]
+User: hi
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 7:07:19 PM]
+User: hi
+MAZ-BRAIN: បាទសួស្ដី,តើមានអ្វីឲ្យខ្ញុំជួយដែរទេ?
+
+[5/14/2025, 7:13:51 PM]
+User: hi
+MAZ-BRAIN: Hello, How can i help you today?
+
+[5/14/2025, 7:16:52 PM]
+User: hi
+MAZ-BRAIN: Hello, How can i help you today?

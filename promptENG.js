@@ -1,0 +1,33 @@
+module.exports = {
+  faqDataEN: [
+    { keywords: ["ip", "server"], answer: "Mazerclub ip is:\n\nBedrock: bedrock.mazerclub.net\nPort: 25619\n\nJava: Mazerclub.net" },
+        { keywords: ["builder",], answer: "MAZERCLUB BUILDERS: CUBEKHMER Pousaisi IBest908" },
+        { keywords: ["born", "បង្កើតឡើង"], answer: "Mazerclub Created on  19 april 2022" },
+        { keywords: ["hi", "hello", "សួស្ដី"], answer: "Hello, How can i help you today?"},
+        { keywords: ["rank", "rank list", "ranks"], answer: "We have 3 Rank include:\n\n - VIP (5$)\n- MVP (10$)\n- MVP+ (15$)"},
+        { keywords: ["register", "ចុះឈ្មោះ",  "ចូលគណនី", "បង្កើតគណនី"], answer: "Please use: /register <pass> <pass> to create you account."},
+        { keywords: ["login"], answer: "please: /login <your pass> to login"},
+        { keywords: ["discord"], answer: "DISCORD MAZERCLUB: https://discord.com/invite/Rpfecpuuzf"},
+        { keywords: ["telegram", "តេឡេក្រាម", "តេឡេ", "តេលេ","tele", "tg"], answer: "TELEGRAM MAZERCLUB: https://t.me/mazerclub_network"},
+        { keywords: ["owner server", "server owner", "owner", "owners", "ម្ចាស់ server", "mjas server"], answer: "Mazerclub Owners:\nXingMazer\nKingTayy"},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+        { keywords: [], answer: ""},
+    // more
+  ]
+};
