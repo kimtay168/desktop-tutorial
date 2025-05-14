@@ -560,26 +560,6 @@
 
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("mazbrain-toggle-btn");
-    const chatBox = document.getElementById("mazbrain-chat");
-
-    // Hide chat on load
-    chatBox.style.display = "none";
-
-    // Toggle visibility
-    toggleBtn.addEventListener("click", () => {
-      chatBox.style.display =
-        chatBox.style.display === "none" ? "flex" : "none";
-    });
-  });
-  const chatMenu = document.getElementById("chat-menu");
-const chatOptionsBtn = document.querySelector(".chat-options");
-
-chatOptionsBtn.addEventListener("click", () => {
-  chatMenu.classList.toggle("hidden");
-});
-
 function clearChat() {
   document.getElementById("chat-log").innerHTML = "";
   localStorage.removeItem("mazbrain-history"); // ⬅ clear stored chat
