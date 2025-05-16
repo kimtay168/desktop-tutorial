@@ -476,6 +476,20 @@
     margin: 6px;
   }
 }
+.dots::after {
+  content: "";
+  display: inline-block;
+  animation: typing-dots 1.2s infinite steps(3);
+  width: 1em;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+@keyframes typing-dots {
+  0% { content: "."; }
+  33% { content: ".."; }
+  66% { content: "..."; }
+}
 
 </style>
 
@@ -564,7 +578,14 @@
       `;
       chatInput.value = "";
       chatLog.scrollTop = chatLog.scrollHeight;
-
+const typingMsg = document.createElement("div");
+typingMsg.className = "chat-msg bot typing";
+typingMsg.innerHTML = `
+  <img class="chat-avatar" src="bot.png" alt="Bot" />
+  <div class="chat-bubble">Typing<span class="dots">...</span></div>
+`;
+chatLog.appendChild(typingMsg);
+chatLog.scrollTop = chatLog.scrollHeight;
       try {
         const selectedLang = localStorage.getItem("lang") || "kh";
 
@@ -579,6 +600,8 @@
 
         const data = await res.json();
 
+         chatLog.removeChild(typingMsg);
+
         // Add bot message (left)
         chatLog.innerHTML += `
           <div class="chat-msg bot">
@@ -591,9 +614,9 @@
     const loadingMsg = document.createElement("div");
     loadingMsg.className = "chat-msg bot typing";
     loadingMsg.innerHTML = `
-      <img class="chat-avatar" src="bot.png" alt="Bot" />
-      <div class="chat-bubble">Typing<span class="dots">...</span></div>
-    `;
+  <img class="chat-avatar" src="bot.png" alt="Bot" />
+  <div class="chat-bubble">Typing<span class="dots">...</span></div>
+`;
     saveChatHistory();
     chatLog.appendChild(loadingMsg);
     chatLog.scrollTop = chatLog.scrollHeight;
