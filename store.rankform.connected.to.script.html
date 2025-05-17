@@ -363,13 +363,10 @@ document.addEventListener("DOMContentLoaded", function () {
       formData.append("status", "Pending");
 
       try {
-        const res = await fetch("https://script.google.com/macros/s/AKfycbzXSmw2slvUPthuSXUe2s_uytJB10TPA8_KDRw6BsaT6ZqQoNFpyJyRFN33t1M_kl1b8A/exec", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-          },
-          body: formData
-        });
+const res = await fetch("https://script.google.com/macros/s/AKfycbzXSmw2slvUPthuSXUe2s_uytJB10TPA8_KDRw6BsaT6ZqQoNFpyJyRFN33t1M_kl1b8A/exec", {
+  method: "POST",
+  body: formData
+});
 
         if (res.ok) {
           alert("✅ Submission successful!");
