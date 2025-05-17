@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAZER-CLUB</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="store.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<link href="image/favicon.png" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
+  </script>
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+  }
+  .modal-content {
+    background: #1e1e1e;
+    color: white;
+    padding: 30px;
+    margin: 80px auto;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #d50000;
+    padding-bottom: 10px;
+  }
+  .modal-content label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .modal-content input, .modal-content select {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    background: #2a2a2a;
+    color: white;
+  }
+  .modal-content input[type="file"] {
+    background: #2a2a2a;
+    color: #ccc;
+  }
+  .modal-content button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 24px;
+    background: #d50000;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .modal-content button:hover {
+    background: #b00000;
+  }
+  .modal-content .close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+  }
+  .modal-content .close:hover {
+    color: white;
+  }
+  @keyframes fadeIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+</style>
+<style>
+  @media (max-width: 600px) {
+    .modal-content {
+      width: 95%;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .modal-content input, 
+    .modal-content select, 
+    .modal-content button {
+      font-size: 15px;
+    }
+
+    .modal-content img {
+      max-width: 140px;
+    }
+
+    .modal-content .close {
+      font-size: 20px;
+    }
+  }
+</style>
+<style>
+  .mazer-logo-glow {
+    max-width: 260px;
+    height: auto;
+    filter: drop-shadow(0 0 12px #ff0000);
+    margin: 0 auto;
+    display: block;
+  }
+  .modal-content .close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+  }
+  .modal-content .close:hover {
+    color: white;
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="nav-wrapper"><nav class="navbar">
+<div class="menu-toggle" id="menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+<ul class="nav-links" id="nav-links">
+<li><a class="nav-item" href="index.html">STORE</a></li>
+<li><a class="nav-item" href="#">VOTE</a></li>
+<li><a class="nav-item active" href="store.html">RANKS</a></li>
+<li><a class="nav-item" href="#">MAPS</a></li>
+<li><a class="nav-item" href="#">SUPPORT</a></li>
+</ul>
+</nav></div>
+<div class="hero-stats">
+<div class="players-box" onclick="copyIP()">
+<div class="players-info">
+<div class="players-online"><span id="player-count">...</span> PLAYERS ONLINE</div>
+<div class="players-ip">
+<span class="default-text">MAZERCLUB.COM</span>
+<span class="hover-text">CLICK TO COPY IP</span>
+</div>
+</div>
+</div>
+<img alt="Mazer Club Logo" class="logo-img" src="image/mazer_club_logo.png"/>
+<div class="discord-box">
+<div class="discord-info">
+<div class="discord-users" id="discord-count">749 USERS ONLINE</div>
+<a class="discord-link" href="https://discord.gg/Rpfecpuuzf" target="_blank">
+<span class="default-text">DISCORD.GG/MAZERCLUB</span>
+<span class="hover-text">CLICK TO JOIN</span>
+</a>
+</div>
+</div>
+</div></header>
+<!-- <a href="index.html" class="home-button">
+    <div class="home-icon">
+      <i class="fa-solid fa-house"></i>
+    </div>
+    <div class="home-text">
+      <span class="label">RETURN TO BROWSE</span><br />
+      <span class="main">HOME</span>
+    </div>
+  </a> -->
+<div class="rank-container-outer">
+<div class="rank-container-inner">
+<section class="rank-section">
+<!-- Home Button and Title -->
+<div class="rank-header-bar">
+<a class="home-button blockhero-style" href="index.html">
+<div class="home-icon-wrapper">
+<i class="fa-solid fa-house"></i>
+</div>
+<div class="home-text">
+<span class="label">RETURN TO BROWSE</span>
+<span class="main">HOME</span>
+</div>
+</a>
+<h2 class="rank-title rank-right">CHOOSE YOUR RANK</h2>
+</div>
+<!-- Rank Cards Row -->
+<div class="rank-row">
+<div class="rank-card vip">
+<img alt="VIP Rank" src="image/VIP.png"/>
+<h1>VIP</h1>
+<p><span class="price pricevip">$5</span></p>
+<a class="buy-button" data-rank="VIP" href="javascript:void(0);" onclick="openRankForm('VIP')">BUY NOW</a>
+</div>
+<div class="rank-card mvp">
+<img alt="MVP Rank" src="image/MVP.png"/>
+<h1>MVP</h1>
+<p><span class="price mvp">$10</span></p>
+<a class="buy-button" data-rank="MVP" href="javascript:void(0);" onclick="openRankForm('MVP')">BUY NOW</a>
+</div>
+<div class="rank-card mvp-plus">
+<img alt="MVP+ Rank" src="image/MVPPLUS.png"/>
+<h1>MVP+</h1>
+<p><span class="price mvpp">$15</span></p>
+<a class="buy-button" data-rank="MVP+" href="javascript:void(0);" onclick="openRankForm('MVP+')">BUY NOW</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+  
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  
+    // Optional: Close on outside click
+    window.onclick = function (event) {
+      document.querySelectorAll('.rank-modal').forEach(modal => {
+        if (event.target === modal) modal.style.display = 'none';
+      });
+    };
+  </script>
+<footer class="footer">
+<div class="footer-left">
+<p>COPYRIGHT 2025 MAZER-CLUB</p>
+<p>We are not affiliated with or endorsed by Mojang, AB.</p>
+<p>Support email: mazerclub@gmail.com</p>
+<p>Theme created by <strong>MAZER-INDUSTRY</strong></p>
+</div>
+<div class="footer-right">
+<a class="social-icon" href="https://www.youtube.com/@mazerclub168"><i class="fa-brands fa-youtube" target="_blank"></i></a>
+<a class="social-icon" href="https://www.facebook.com/mazerclub"><i class="fa-brands fa-facebook"></i></a>
+<a class="social-icon" href="https://www.tiktok.com/@mazerclub2"><i class="fa-brands fa-tiktok"></i></a>
+<a class="social-icon" href="https://t.me/mazerclub_network"><i class="fab fa-telegram-plane"></i></a>
+</div>
+</footer>
+<!-- RANK FORM MODAL -->
+<div class="modal" id="rankFormModal">
+<div class="modal-content">
+<span class="close" onclick="closeRankForm()">×</span>
+<div style="text-align: center;">
+<img alt="Mazer Logo" class="mazer-logo-glow" src="image/mazer_club_logo.png" style="max-width: 220px; height: auto;"/>
+</div>
+<form enctype="multipart/form-data" id="rankForm">
+<label for="username">Minecraft Username</label>
+<input id="username" name="username" required="" type="text"/>
+<label for="platform">Platform</label>
+<select id="platform" name="platform" required="">
+<option value="Java">Java</option>
+<option value="Bedrock">Bedrock</option>
+</select>
+<label for="server">Server</label>
+<select id="server" name="server" required="">
+<option value="mazersmp">MazerSMP</option>
+<option value="crystalpvp">CrystalPvP</option>
+<option value="survival">Survival</option>
+<option value="lifesteal">Lifesteal</option>
+</select>
+<label for="rank">Rank</label>
+<select id="rank" name="rank" required="">
+<option value="VIP">VIP</option>
+<option value="MVP">MVP</option>
+<option value="MVP+">MVP+</option>
+</select><a download="mazerclub_qr.png" href="image/aba_qr.png"><img alt="Scan to Pay" src="image/aba_qr.png" style="display: block; margin: 30px auto; max-width: 520px; width: 100%; border-radius: 14px; box-shadow: 0 0 12px rgba(255,0,0,0.4);"/><br/></a>
+<label for="screenshot">Upload ABA Payment Screenshot</label>
+<input accept="image/*" id="screenshot" name="screenshot" required="" type="file"/>
+<button type="submit">Submit</button>
+<div id="successMsg" style="color:green; display:none;">✅ Submitted!</div>
+<div id="errorMsg" style="color:red; display:none;">❌ Submission failed.</div>
+</form>
+</div>
+</div>
+<script>
+  function openRankForm(rank) {
+    const modal = document.getElementById('rankFormModal');
+    const rankSelect = document.getElementById('rank');
+    if (rankSelect) rankSelect.value = rank;
+    modal.style.display = 'block';
+    playSound();
+  }
+
+  function closeRankForm() {
+    const modal = document.getElementById('rankFormModal');
+    if (modal) modal.style.display = 'none';
+  }
+
+  function playSound() {
+    const audio = new Audio('https://cdn.pixabay.com/download/audio/2022/03/15/audio_4abfa21b34.mp3?filename=notification-102447.mp3');
+    audio.play();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const buyButtons = document.querySelectorAll(".buy-button[data-rank]");
+    buyButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const rank = button.getAttribute("data-rank");
+        openRankForm(rank);
+      });
+    });
+
+    const closeBtns = document.querySelectorAll(".modal .close");
+    closeBtns.forEach(closeBtn => {
+      closeBtn.addEventListener("click", closeRankForm);
+    });
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('rankFormModal');
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("rankForm");
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const platform = document.getElementById("platform").value;
+    const server = document.getElementById("server").value;
+    const rank = document.getElementById("rank").value;
+    const screenshotInput = document.getElementById("screenshot");
+
+    if (!screenshotInput.files.length) {
+      alert("Please upload a screenshot.");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = async function () {
+      const base64Image = reader.result.split(",")[1];
+
+      const formData = new URLSearchParams();
+      formData.append("username", username);
+      formData.append("platform", platform);
+      formData.append("server", server);
+      formData.append("rank", rank);
+      formData.append("screenshot", base64Image);
+      formData.append("status", "Pending");
+
+      try {
+        const res = await fetch("https://script.google.com/macros/s/AKfycbwaLsJu6erga5qBWAckEwL7cSTA1mWEsNvHko_qaksLuDe-r1xnD9he8-j47j-CJlV8hg/exec", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+          body: formData
+        });
+
+        if (res.ok) {
+          alert("✅ Submission successful!");
+          form.reset();
+          closeRankForm();
+        } else {
+          alert("❌ Failed to submit. Try again.");
+        }
+      } catch (err) {
+        alert("⚠️ Error: " + err.message);
+      }
+    };
+
+    reader.readAsDataURL(screenshotInput.files[0]);
+  });
+});
+</script></body>
+</html>
