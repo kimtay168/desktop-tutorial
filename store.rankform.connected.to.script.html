@@ -354,7 +354,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const reader = new FileReader();
     reader.onload = async function () {
       const base64Image = reader.result.split(",")[1];
-
       const formData = new URLSearchParams();
       formData.append("username", username);
       formData.append("platform", platform);
@@ -375,9 +374,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (res.ok) {
           alert("✅ Submission successful!");
           form.reset();
-          closeRankForm();
         } else {
-          alert("❌ Failed to submit. Try again.");
+          alert("❌ Submission failed.");
         }
       } catch (err) {
         alert("⚠️ Error: " + err.message);
